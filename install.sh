@@ -6,5 +6,5 @@ do
 	echo "installing /usr/local/bin/$commandName"
 	curl https://raw.github.com/marcuswestin/git-star/master/$commandFile > /tmp/$commandFile
 	chmod +x /tmp/$commandFile
-	mv /tmp/$commandFile /usr/local/bin/
+	mv /tmp/$commandFile /usr/local/bin/$commandName
 done
