@@ -15,6 +15,6 @@ BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 TAGNAME=$1
 
 git tag -a "$1" -m "Tag $1"
-git push --tags
 
 echo "Pushing tags..."
+git push --tags
