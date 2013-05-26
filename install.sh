@@ -1,3 +1,5 @@
+# Install git* scripts from main repository
+
 set -e # die on error
 
 if [ -d /tmp/git-star ]; then

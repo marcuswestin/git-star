@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Usage: gittag [tag]
+# What: Add a tag and push it to the remote
+# Usage: gittag <tag name>
 # Examples:
 #> gittag v1.0.0
 #> gittag "v2 release"
 
-set -e # die on error
-
+set -e
 cd $(git rev-parse --show-toplevel)
 
 REMOTE="origin"

@@ -1,7 +1,14 @@
 #!/bin/bash
 
-set -e # die on error
+# What: Pull from and then push to the remote branch
+# Usage: gitupnpush [[remote] branch]
+# Examples:
+#> gitupnpush
+#> gitupnpush master
+#> gitupnpush origin master
+#> gitupnpush marcuswestin_remote feature_branch
 
+set -e
 cd $(git rev-parse --show-toplevel)
 
 REMOTE="origin"

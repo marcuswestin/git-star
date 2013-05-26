@@ -1,7 +1,14 @@
 #!/bin/bash
 
-set -e # die on error
+# What: Push changes to the remote branch
+# Usage: gitpush [remote [branch]]
+# Examples:
+#> gitpush
+#> gitpush master
+#> gitpush origin master
+#> gitpush marcuswestin_remote feature_branch
 
+set -e
 cd $(git rev-parse --show-toplevel)
 
 REMOTE="origin"

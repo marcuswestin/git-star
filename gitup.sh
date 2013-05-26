@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# What: Pull from the remote branch
 # Usage: gitup [[remote] branch]
 # Examples:
 #> gitup
@@ -7,8 +8,7 @@
 #> gitup origin master
 #> gitup marcuswestin_remote feature_branch
 
-set -e # die on error
-
+set -e
 cd $(git rev-parse --show-toplevel)
 
 REMOTE="origin"
