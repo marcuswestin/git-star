@@ -1,10 +1,11 @@
 set -e # die on error
 
-for commandFile in git*.sh
-do
-	commandName=${commandFile/\.sh/}
-	echo "installing /usr/local/bin/$commandName"
-	curl https://raw.github.com/marcuswestin/git-star/master/$commandFile > /tmp/$commandFile
-	chmod +x /tmp/$commandFile
-	mv /tmp/$commandFile /usr/local/bin/$commandName
-done
+if [ -d /tmp/git-star]; then
+	cd /tmp/git-star
+	git pull origin master
+else
+	git clone https://github.com/marcuswestin/git-star.git /tmp/git-star
+	cd /tmp/git-star
+fi
+
+bash ./install_local.sh
