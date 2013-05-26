@@ -1,6 +1,6 @@
 set -e # die on error
 
-if [ -d /tmp/git-star]; then
+if [ -d /tmp/git-star ]; then
 	cd /tmp/git-star
 	git pull origin master
 else
