@@ -21,6 +21,6 @@ elif [ $1 ]; then
     BRANCH=$1
 fi
 
-gitup $REMOTE $BRANCH
+gitu-update $REMOTE $BRANCH
 echo "Pushing..."
 git push $REMOTE $BRANCH
