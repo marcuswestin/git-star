@@ -1,1 +1,1 @@
-git diff --cached
+git diff --cached "$*"

@@ -1,1 +1,1 @@
-git diff
+git diff "$*"
