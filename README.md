@@ -13,5 +13,3 @@ Then:
 	curl https://raw.github.com/marcuswestin/git-star/master/install.sh | bash
 
 
-
-
