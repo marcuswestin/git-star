@@ -25,6 +25,6 @@ git checkout $BRANCH
 
 echo "Update git repo `pwd` from $REMOTE/$BRANCH"
 git fetch $REMOTE $BRANCH
-git rebase
+git merge --ff-only $BRANCH
 git submodule sync
 git submodule update --init --recursive
