@@ -11,3 +11,4 @@ First, be a responsible codizen and read https://raw.github.com/marcuswestin/git
 Then:
 
 	curl https://raw.github.com/marcuswestin/git-star/master/install.sh | bash
+
