@@ -11,3 +11,4 @@ else
 fi
 
 bash ./install_local.sh
+
