@@ -1,1 +1,6 @@
-git diff --cached "$*"
+if [ -z "$*" ]
+then
+	git diff --cached .
+else
+	git diff --cached "$*"
+fi
