@@ -9,7 +9,7 @@
 #> gitup marcuswestin_remote feature_branch
 
 set -e
-cd $(git rev-parse --show-toplevel)
+cd "$(git rev-parse --show-toplevel)"
 
 REMOTE="origin"
 BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`

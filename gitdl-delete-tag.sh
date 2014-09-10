@@ -7,7 +7,7 @@
 #> gitdeletetag "v2 release"
 
 set -e
-cd $(git rev-parse --show-toplevel)
+cd "$(git rev-parse --show-toplevel)"
 
 TAGNAME=$1
 REMOTE="origin"
