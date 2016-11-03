@@ -1,1 +1,5 @@
-git commit --amend -m "$*"
+if [ "$*" == "" ]; then
+	git commit --amend
+else
+	git commit --amend -m "$*"
+fi
