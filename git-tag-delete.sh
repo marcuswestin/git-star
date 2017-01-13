@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # What: Delete a git tag, locally and remotely
-# Usage: gitdeletetag [tag]
+# Usage: git-tag-delete [tag]
 # Examples:
-#> gitdeletetag v1.0.0
-#> gitdeletetag "v2 release"
+#> git-tag-delete v1.0.0
+#> git-tag-delete "v2 release"
 
 set -e
 cd "$(git rev-parse --show-toplevel)"

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # What: Pull from and then push to the remote branch
-# Usage: gitupnpush [[remote] branch]
+# Usage: gitu-updatenpush [[remote] branch]
 # Examples:
-#> gitupnpush
-#> gitupnpush master
-#> gitupnpush origin master
-#> gitupnpush marcuswestin_remote feature_branch
+#> gitu-updatenpush
+#> gitu-updatenpush master
+#> gitu-updatenpush origin master
+#> gitu-updatenpush marcuswestin_remote feature_branch
 
 set -e
 cd "$(git rev-parse --show-toplevel)"

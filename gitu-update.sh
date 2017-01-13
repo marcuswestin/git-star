@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # What: Pull from the remote branch
-# Usage: gitup [[remote] branch]
+# Usage: gitu-update [[remote] branch]
 # Examples:
-#> gitup
-#> gitup master
-#> gitup origin master
-#> gitup marcuswestin_remote feature_branch
+#> gitu-update
+#> gitu-update master
+#> gitu-update origin master
+#> gitu-update marcuswestin_remote feature_branch
 
 set -e
 cd "$(git rev-parse --show-toplevel)"
