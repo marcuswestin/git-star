@@ -1,1 +1,2 @@
-git status "$*"
+PATHS="$*"
+git status $PATHS
