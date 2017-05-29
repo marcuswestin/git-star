@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # What: Add a tag and push it to the remote
-# Usage: gittag <tag name>
+# Usage: gittag-new <tag name>
 # Examples:
-#> gittag v1.0.0
-#> gittag "v2 release"
+#> gittag-new v1.0.0
+#> gittag-new "v2 release"
 
 set -e
 cd "$(git rev-parse --show-toplevel)"
