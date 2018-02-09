@@ -1,6 +1,6 @@
 if [ -z "$*" ]
 then
-	git diff .
+	git diff
 else
 	git diff "$*"
 fi

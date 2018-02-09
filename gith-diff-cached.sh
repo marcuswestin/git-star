@@ -1,6 +1,6 @@
 if [ -z "$*" ]
 then
-	git diff --cached .
+	git diff --cached
 else
 	git diff --cached "$*"
 fi
