@@ -14,6 +14,11 @@ BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 
 TAGNAME=$1
 
+if [ -z $TAGNAME ]; then
+	echo "Missing tagname"
+	exit -1
+fi
+
 gitp-push
 git tag -a "$1" -m "Tag $1"
 
