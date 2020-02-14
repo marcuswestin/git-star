@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install all git* scripts on this local machine
 
 for commandFile in git*.sh

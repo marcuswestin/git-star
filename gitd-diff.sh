@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -z "$*" ]
 then
 	git diff

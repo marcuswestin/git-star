@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ "$*" == "" ]; then
 	git commit --amend
 else
