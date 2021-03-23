@@ -1,7 +1,10 @@
 #!/bin/bash
 
-if [ "$*" == "" ]; then
+if [[ $# -eq 0 ]]; then
 	git commit --amend
+elif [[ $# -eq 1 ]]; then
+	git commit --amend -m "$1"
 else
-	git commit --amend -m "$*"
+	echo "Illegal number of parameters"
+	exit -1
 fi
