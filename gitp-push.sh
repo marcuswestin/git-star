@@ -21,5 +21,8 @@ elif [ $1 ]; then
     BRANCH=$1
 fi
 
+echo "Pushing submodules"
+git push --recurse-submodules=on-demand
+
 echo "Pushing..."
 git push $REMOTE $BRANCH
