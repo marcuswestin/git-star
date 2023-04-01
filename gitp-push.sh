@@ -22,7 +22,7 @@ elif [ $1 ]; then
 fi
 
 # echo "Pushing submodules"
-# find . -depth -name .git -exec dirname {} \; 2> /dev/null | sort -n -r | xargs -I{} bash -c "cd {}; echo '- Check status: {}'; git status | grep ahead > /dev/null && { echo '- Push {}!'; git push; }"
+find . -depth -name .git -exec dirname {} \; 2> /dev/null | sort -n -r | xargs -I{} bash -c "cd {}; echo '- Check status: {}'; git status | grep ahead > /dev/null && { echo '- Push {}!'; git push; }"
 
 echo "Pushing main"
 git push $REMOTE $BRANCH
