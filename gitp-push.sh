@@ -33,7 +33,5 @@ find . -depth -name .git -exec dirname {} \; 2> /dev/null \
             git push \$REMOTE \$BRANCH; \
         }"
 
-
-
 # echo "Pushing main"
 # git push $REMOTE $BRANCH
