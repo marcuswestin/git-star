@@ -5,6 +5,7 @@ if [[ $# -eq 0 ]]; then
 # else
 	# Why doesn't this work?!
 	# git commit -m \""$@"\"
+# 	git commit -m "$0"
 elif [[ $# -eq 1 ]]; then
 	git commit -m "$1"
 else
