@@ -29,7 +29,7 @@ find . -depth -name .git -exec dirname {} \; 2> /dev/null \
         export BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`; \
         echo \"- Check {} \$REMOTE \$BRANCH\"; \
         git status | grep ahead > /dev/null && \
-            { echo - Push {} \$REMOTE \$BRANCH; \
+            { echo - PUSH! {} \$REMOTE \$BRANCH; \
             git push \$REMOTE \$BRANCH; \
         }"
 
