@@ -40,8 +40,6 @@ find . -depth -name .git -exec dirname {} \; 2> /dev/null \
         echo - Check {}; \
         git status | grep ahead > /dev/null && \
             { echo - PUSH! {}; \
-            export REMOTE='origin'; \
-            export BRANCH=$(git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'); \
             git push \$REMOTE \$BRANCH; }"
 
 # echo "Pushing main"
