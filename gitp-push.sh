@@ -22,7 +22,7 @@ cd "$(git rev-parse --show-toplevel)"
 # fi
 
 # echo "Pushing submodules"
-find . -depth -name .git -exec dirname {} \; 2> /dev/null | sort -n -r | xargs -I{} bash -c "cd {}; echo '- Check status: {}'; git status | grep ahead > /dev/null && { echo '- Push {}!'; REMOTE='origin' BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'` git push $REMOTE $BRANCH; }"
+find . -depth -name .git -exec dirname {} \; 2> /dev/null | sort -n -r | xargs -I{} bash -c "cd {}; echo '- Check status: {}'; git status | grep ahead > /dev/null && { echo '- Push {}!'; REMOTE='origin' BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'` echo $REMOTE $BRANCH && git push $REMOTE $BRANCH; }"
 
 # echo "Pushing main"
 # git push $REMOTE $BRANCH
