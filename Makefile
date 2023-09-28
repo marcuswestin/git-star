@@ -1,2 +1,2 @@
-install:
-	./install_local.sh
+setup:
+	@ node ./setup.js
